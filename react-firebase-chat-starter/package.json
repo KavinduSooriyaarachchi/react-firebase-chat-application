@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "emoji-picker-react": "^4.9.4",
     "esbuild": "^0.21.4",
     "firebase": "^10.12.2",
