@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "react-toastify": "^10.0.5",
-    "sass": "^1.77.4"
+    "sass": "^1.77.4",
+    "zustand": "^4.5.2"
   }
 }
