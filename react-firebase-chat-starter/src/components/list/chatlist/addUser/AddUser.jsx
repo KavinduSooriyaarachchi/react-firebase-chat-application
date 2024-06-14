@@ -25,6 +25,8 @@ const AddUser = () => {
     }
   };
 
+  const handleAdd = async () => {};
+
   return (
     <div className="addUser">
       <form onSubmit={handleSearch}>
@@ -37,7 +39,7 @@ const AddUser = () => {
             <img src={user.avatar || "./avatar.png"} alt="" />
             <span>{user.username}</span>
           </div>
-          <button>Add User</button>
+          <button onClick={handleAdd}>Add User</button>
         </div>
       )}
     </div>
