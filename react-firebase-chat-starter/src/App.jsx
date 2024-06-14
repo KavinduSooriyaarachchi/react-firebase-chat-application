@@ -15,7 +15,7 @@ const App = () => {
   useEffect(() => {
     const unSub = onAuthStateChanged(auth, async (user) => {
       if (user) {
-        await fetchUserInfo(user.uid);
+        await fetchUserInfo(user?.uid);
       } else {
         fetchUserInfo(null); // Handle the case where the user is not logged in
       }
