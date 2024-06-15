@@ -92,7 +92,7 @@ import React, { useEffect, useState } from "react";
 import "./chatlist.css";
 import AddUser from "./addUser/AddUser";
 import { useUserStore } from "../../../lib/userStore";
-import { DocumentReference, doc, getDoc, onSnapshot } from "firebase/firestore";
+import { doc, getDoc, onSnapshot } from "firebase/firestore";
 import { db } from "../../../lib/firebase";
 
 const Chatlist = () => {
@@ -146,7 +146,7 @@ const Chatlist = () => {
         <div className="item" key={chat.chatId}>
           <img src={chat.user.avatar || "./avatar.png"} alt="" />
           <div className="texts">
-            <span>Jane Doe</span>
+            <span>{chat.user.username}</span>
             <p>{chat.lastMessage}</p>
           </div>
         </div>
