@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url("/bg.jpg");
+  background-image: url("/bg.png");
   display: flex;
   align-items: center;
   justify-content: center;
